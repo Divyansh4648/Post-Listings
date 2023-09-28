@@ -1,0 +1,61 @@
+/* Styling for the PostList component */
+
+.post-list-container {
+    max-width: 80000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .post-list-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    margin-bottom: 20px;
+  }
+  
+  .post-link {
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .post-link:hover {
+    text-decoration: underline;
+  }
+  
+  .post-body {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+  
+  .pagination {
+    margin-top: 20px;
+  }
+  
+  .pagination-button {
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .pagination-button:hover {
+    background-color: #0056b3;
+  }
+  
