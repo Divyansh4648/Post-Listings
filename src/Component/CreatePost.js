@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import './CreatePost.css'; // Import your CSS file
+import './CreatePost.css';
 import { useNavigate } from 'react-router-dom';
 
 function CreatePost() {
@@ -10,11 +10,8 @@ function CreatePost() {
     // Handle form submission here (e.g., send a POST request to your API)
     const values = Object.fromEntries(new FormData(event.target));
     try {
-      // Make a POST request to the API to create a new post
       await axios.post('https://jsonplaceholder.typicode.com/posts', values);
-      // Show success message
       alert('Post created successfully');
-      // Redirect to the previous post listing screen
       navigate('/');
     } catch (error) {
       console.error('Error creating post:', error);
