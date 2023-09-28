@@ -7,7 +7,6 @@ function CreatePost() {
   const navigate = useNavigate()
   const handleSubmit = async (event) => {
     event.preventDefault();
-    // Handle form submission here (e.g., send a POST request to your API)
     const values = Object.fromEntries(new FormData(event.target));
     try {
       await axios.post('https://jsonplaceholder.typicode.com/posts', values);
