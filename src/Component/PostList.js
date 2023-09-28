@@ -9,7 +9,6 @@ const PostList = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Fetch posts based on start and limit
     const fetchData = async () => {
       const response = await fetch(`https://jsonplaceholder.typicode.com/posts?_start=${(page - 1) * perPage}&_limit=${perPage}`);
       const data = await response.json();
